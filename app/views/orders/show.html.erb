@@ -10,6 +10,13 @@
 
   <div class="panel panel-default items">
       <table class="table table-bordered">
+         <thead>
+          <tr>
+            <th colspan="2">Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
     <tbody>
       <% @order.line_items.each do |item| %>
         <%= render 'item', product: item.product, quantity: item.quantity %>
@@ -21,7 +28,7 @@
             TOTAL:
           </th>
           <th>
-            <%= humanized_money_with_symbol @order.total_cents / 100 %>
+            <%= humanized_money_with_symbol @order.total_cents / 100.0 %>
           </th>
         </tr>
     </tfoot>
