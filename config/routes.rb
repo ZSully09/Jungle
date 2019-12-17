@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root to: 'products#index'
 
-  resource :about, only: [:show], to: 'about'
+  resource :about, only: [:show], controller: 'about'
   # get '/about', to: 'about#show'
 
   get '/login' => 'sessions#new'
