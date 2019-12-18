@@ -44,6 +44,29 @@ RSpec.describe User, type: :model do
       @user.password_confirmation = nil
       expect(@user).not_to be_valid
     end
+  end
 
+  describe '.authenticate_with_credentials' do
+    
+    it 'should return the correct user given their credentials' do
+      @user.save
+      expect(
+        User.authenticate_with_credentials('therealbob@saget.com', 'IAmBobSaget')
+      ).to be_a(User)
+    end
+
+    it 'should ignore whitespace on login' do
+      @user.save
+      expect(
+        User.authenticate_with_credentials('   therealbob@saget.com  ', 'IAmBobSaget')
+      ).to be_a(User)
+    end
+
+    it 'should ignore uppercase on login' do
+      @user.save
+      expect(
+        User.authenticate_with_credentials('therealbob@SAGET.com', 'IAmBobSaget')
+      ).to be_a(User)
+    end
   end
 end
