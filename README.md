@@ -2,6 +2,17 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Functionality
+
+Jungle is a shopping website where a user, regardless if logged in or not, can add items to their cart and purchase the item using a stripe payments system.
+
+## Screenshots
+
+!["Home"](https://github.com/ZSully09/Jungle/blob/master/screenshots/Home.jpeg)
+
+!["Apparel"](https://github.com/ZSully09/Jungle/blob/master/screenshots/Apparel.jpeg)
+
+!["My Cart"](https://github.com/ZSully09/Jungle/blob/master/screenshots/Cart.jpeg)
 
 ## Setup
 
@@ -22,6 +33,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Dependencies
 
-* Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
-* PostgreSQL 9.x
-* Stripe
+- Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
+- PostgreSQL 9.x
+- Stripe
