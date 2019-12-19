@@ -8,9 +8,15 @@ Jungle is a shopping website where a user, regardless if logged in or not, can a
 
 ## Screenshots
 
+### Home Page
+
 !["Home"](https://github.com/ZSully09/Jungle/blob/master/screenshots/Home.jpeg)
 
+### Apparel Category
+
 !["Apparel"](https://github.com/ZSully09/Jungle/blob/master/screenshots/Apparel.jpeg)
+
+### My Cart
 
 !["My Cart"](https://github.com/ZSully09/Jungle/blob/master/screenshots/Cart.jpeg)
 
